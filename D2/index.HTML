@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- a berfungsi untuk berpindah halaman 1 ke halaman lain
+    href berfungsi untuk menentukan bagaimana halaman yang akan dituju
+    target berfungsi untuk menentukan bagaimana halaman akan dibuka -->
+     <a href="index.HTML">
+        Pindah index
+    </a>
+
+    <br>
+
+    <a href="https://www.instagram.com/khansamahera_/?hl=en">
+        instagram saya
+    </a>
+
+    <br>
+
+    <a href="https://www.instagram.com/khansamahera_/?hl=en">
+        instagram saya
+    </a>
+    <br>
+    <a href="https://www.instagram.com/khansamahera_/?hl=en">
+        <img src="image/sunoo.jpeg" width="70">
+    </a>
+
+    <br>
+
+    <!-- 
+    center berfungsi untuk membuat elemen berada di tengah 
+    -->
+    <center>
+        <img src="image/cowoku.jpeg" alt="gambar" width="200">
+        <h1>Dilesin</h1>
+    </center>
+
+    <!-- 
+        table berfungsi untuk membuat tabel
+        tr berfungsi untuk membuat baris
+        th berfungsi untuk membuat header
+        td berfungsi untuk membuat kolom
+        border berfungsi untuk memberikan garis pada table
+        width berfungsi untuk memberikan lebar pada table
+        collspan berfungsi untuk menggabungkan kolom
+        align berfungsi untuk mengatur garis table
+        placeholder berfungsi untuk memberikan placeholder pada inputan
+        id berfungsi untuk memberikan id pada inputan
+        onlick berfungsi untuk menjalankan fungsi ketika di klik,
+     -->
+    <table border="1" width="100%">
+        <tr>
+            <th align="left">
+                No
+            </th>
+            <th align="center">
+                Nama
+            </th>
+            <th align="left">
+                Kelas
+            </th>
+            <th colspan="3">
+                kehadiran
+            </th>
+        </tr>
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                chacha
+            </td>
+            <td>
+                normal
+            </td>
+            <th>
+                aneh
+            </th>
+            <th>
+                odgj
+            </th>
+        </tr>
+        <tr>
+            <td>
+                2
+            </td>
+            <td>
+                calisek
+            </td>
+            <td>
+                ora sekolah
+            </td>
+            <th>
+                normal
+            </th>
+            <th>
+                aneh
+            </th>
+            <th>
+               odgj
+            </th>
+        </tr>
+    </table>
+
+    <form method="get">
+        <label for="">Nama</label>
+        <br>
+        <input type="text" name="nama" placeholder="Masukkan nama anda disini">
+
+        <br>
+        <label for="">Email</label>
+        <br>
+        <input type="text" name="Email" placeholder="Masukkan Email anda disini">
+
+        <br>
+        <label for="">Password</label>
+        <br>
+        <input type="password" name="password" placeholder="Masukkan Password anda disini" id="password">
+        <br>
+        <input type="checkbox" onclick="show()">
+        <label>Tampilan Password</label>
+
+        <br>
+        <label for="">Tanggal lahir</label>
+        <br>
+        <input type="date">
+
+        <br>
+        <label for="">Jenis Kelamin</label>
+        <br>
+       <select name="" id="">
+        <option value="">Laki-Laki</option>
+        <option value="">Perempuan</option>
+        <option value="">Lainnya</option>
+      </select>
+
+      <br>
+      <label for="">alamat</label>
+      <br>
+      <textarea name="" id="" cols="50" rows="10"></textarea>
+
+      <br>
+      <label for="">Foto KTP</label>
+      <br>
+      <input type="file">
+
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">reset</button>
+    </form>
+
+    <script>
+        function show() {
+            var input = document.getElementById("password");
+            if (input.type === "password"){
+                input.type ="text";
+            }else{
+                input.type ="password";
+            }
+              
+        }
+    </script>
+
+</body>
+</html>
