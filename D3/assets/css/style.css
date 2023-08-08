@@ -1,0 +1,101 @@
+
+body {
+    background-color: bisque;
+}
+
+/* contoh selector class */
+h1 {
+    color: aqua;
+}
+
+/* contoh selector tag */
+p {
+    color: black;
+}
+
+/* penggabungan style  */
+.heading-text-1 {
+    color: black;
+}
+
+.heading-text-1,
+.heading-text-2 {
+    color: blueviolet;
+}
+
+/* 
+contoh selector id
+id bersifat unil, tidak boleh ada yang sama
+ */
+
+ #gambar-disini{
+    width: 300px;
+
+    margin-bottom: 2rem;
+ }
+
+ .container-article {
+    background-color: white;
+    /* width fit-content; 
+    padding memberi garis tepi*/
+    padding: 1rem;
+    /* padding-left: 1rem 
+    padding-top: 1rem
+    padiing-bottom: 1rem
+    */
+    margin-top: 2rem;
+
+    /* display: none; */
+
+
+    /* border radius berfungsi memberikan garis lengkung pada element */
+    border-radius: 12px;
+
+    /* text-align center berfungsi mencenterkan pada element */
+    text-align: center;
+
+    .text-caption {
+        /* mengubah ukuran font */
+        font-size: 24px;
+        /* mengubah ketebalan font */
+        font-weight: 700;
+        /* mengubah style font */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* mengatur font menjadi huruf kecil atau tidak*/
+        font-variant: small-caps;
+
+        /* mengubah warna font */
+        color: gold;
+        /* khusus arab */
+        direction: rtl;
+
+        /* word spacing mengatur jarak antar kata */
+        text-decoration: underline;
+
+        word-spacing: 20px;
+
+        .rectangle {
+            width: 100px;
+            height: 100px;
+           background-color: brown;
+        }
+
+        .container-article {
+            margin-top: 1rem;
+
+            /* display flex berfungsi untuk membuat konten menjadi  */
+            display: flex;
+
+            /* mengatur posisi konten terdapat jarak antar elemen */
+            /* justify-content: space-between */
+            /* justify-content: center */
+            /*  justify-content: end*/
+             justify-content: 100px;
+
+             /*  */
+             gap: 20px;
+        }
+
+
+    }
+
